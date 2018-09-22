@@ -1,0 +1,44 @@
+.nameVillain{
+	height: 100px;
+
+}
+.text-name{
+	text-align: center;
+	font-size: 50px;
+	font-style: bold;
+	color: #1846f0;
+}
+.star{
+ 	margin-top: 10px;
+	margin-left: 120px;
+}
+
+.skill{
+	margin-top: 100px;
+}
+.item-skill{
+	font-style: bold;
+	margin: auto;
+	width: 90%;
+	height: 50px;
+	border-radius: 100px;
+	border: 2px;
+	border-style: outset;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 15px;
+	background: linear-gradient(#0920ab, #1031f7);
+	font-size: 25px;
+	color: #52f652;
+}
+.text-change{
+	margin-top: 130px;
+}
+.text-change input{
+	width: 90%;
+	height: 50px;
+	margin-left: 25px;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+}
