@@ -1,0 +1,33 @@
+<div class="hero">
+	<div class="nameHero">
+		<div class="text-name">
+			{{hero.name}}
+		</div>
+		<div class="star">
+			<img src="../../../assets/imager/gold-star.png"  alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png"  alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+			<img src="../../../assets/imager/gold-star.png" alt="">
+
+		</div>
+	</div>
+	<div class="skill">
+		<p *ngFor="let skill of hero.skills" class="item-skill">
+			{{skill}}
+		</p>
+	</div>
+	<div class="text-change">
+		<input type="text"  [(ngModel)]="hero.name">
+	</div>
+	
+</div>
+
+
+
+
