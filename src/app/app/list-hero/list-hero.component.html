@@ -1,0 +1,13 @@
+<div style="width:50%;float:left" >
+  <app-heroes  [hero]="selectedHero"></app-heroes>
+</div>
+<div style="width:50%;float:right">
+  <div class="hero" *ngFor="let hero of listHero" (click)="onSelect(hero)">
+
+    <div class="one-hero" [class.selected]="hero===selectedHero" >
+      <b>   {{hero.id}} :  {{hero.name}}  </b>
+    </div>
+  </div>
+</div>
+
+

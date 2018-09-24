@@ -1,0 +1,20 @@
+.one-hero{
+  padding: 5px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  border: 2px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: #52f652;
+  margin-top: 10px;
+  background: linear-gradient(#fd3a06,#ed9f07);
+  color: #0920ab;
+}
+.hero :hover{
+  background: #e70d31;
+}
+.selected{
+  color: #52f652;
+}
+

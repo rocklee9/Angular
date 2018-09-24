@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero" *ngIf="hero">
 	<div class="nameHero">
 		<div class="text-name">
 			{{hero.name}}
@@ -25,7 +25,7 @@
 	<div class="text-change">
 		<input type="text"  [(ngModel)]="hero.name">
 	</div>
-	
+
 </div>
 
 
