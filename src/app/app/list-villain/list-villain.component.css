@@ -1,0 +1,31 @@
+.one-villain{
+  padding: 5px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border: 2px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: #ed9f07;
+  margin-top: 10px;
+  background: linear-gradient(#0920ab,#1846f0);
+  color: #52f652;
+}
+.villain :hover{
+  background: #e70d31;
+}
+.selected{
+  color: #ecf1ed;
+}
+
+.boder-villain{
+  width: 100%;
+  float: right;
+  border: 10px ;
+  height: 600px;
+  border-radius: 8px;
+  margin-right: 15px;
+  border-style: outset;
+  border-color: blue;
+  background: #fcf9f8;
+}

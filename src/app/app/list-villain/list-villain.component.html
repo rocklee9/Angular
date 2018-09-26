@@ -1,0 +1,14 @@
+<div style="width:70%;float:left" >
+  <div class="boder-villain">
+    <app-villain [villain]="selectVillain"></app-villain>
+  </div>
+
+</div>
+<div style="width:30%;float:right" >
+  <div class="villain" *ngFor="let villain of listVillain" (click)="onSelectVillain(villain)">
+
+    <div class="one-villain" [class.selected]="villain===selectVillain">
+      <b>   {{villain.id}} :  {{villain.name}}  </b>
+    </div>
+  </div>
+</div>

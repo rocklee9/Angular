@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero" *ngIf="hero">
 	<div class="nameHero">
 		<div class="text-name">
 			{{hero.name}}
@@ -9,12 +9,6 @@
 			<img src="../../../assets/imager/gold-star.png" alt="">
 			<img src="../../../assets/imager/gold-star.png" alt="">
 			<img src="../../../assets/imager/gold-star.png" alt="">
-			<img src="../../../assets/imager/gold-star.png"  alt="">
-			<img src="../../../assets/imager/gold-star.png" alt="">
-			<img src="../../../assets/imager/gold-star.png" alt="">
-			<img src="../../../assets/imager/gold-star.png" alt="">
-			<img src="../../../assets/imager/gold-star.png" alt="">
-
 		</div>
 	</div>
 	<div class="skill">
@@ -25,7 +19,7 @@
 	<div class="text-change">
 		<input type="text"  [(ngModel)]="hero.name">
 	</div>
-	
+
 </div>
 
 
