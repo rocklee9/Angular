@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from "../entity/Hero";
 import {listHero} from "../data/heroes";
+import {HeroService} from "../services/hero.service";
 
 @Component({
   selector: 'app-list-hero',
@@ -10,13 +11,15 @@ import {listHero} from "../data/heroes";
 export class ListHeroComponent implements OnInit {
   listHero:Hero[];
   selectedHero:Hero;
-  constructor() {
-    this.listHero= listHero;
+  constructor( private heroService: HeroService  ) {
+
 
   }
   ngOnInit() {
+    this.listHero= this.heroService.getHero();
+
   }
   onSelect(hero : Hero):void{
-     this.selectedHero=hero;  
+     this.selectedHero = this.heroService.getHeroByID(hero.id);
   }
 }
