@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {listHero} from "../data/heroes";
 import {Hero} from "../entity/Hero";
 import {forEach} from "@angular/router/src/utils/collection";
+import {Observable, of} from "rxjs";
+import {MesService} from "./mes.service";
 
 @Injectable({
   providedIn: 'root'
@@ -9,21 +11,16 @@ import {forEach} from "@angular/router/src/utils/collection";
 
 export class HeroService {
 
-  constructor() { }
-  getHero(): Hero[]{ return listHero; }
+  constructor(private  MesService: MesService) { }
+  getHero():Observable<Hero[]> {
+    this.MesService.add('khơi tạo thành công');
+    return of(listHero); }
+
   getHeroByID(id:Number): Hero{
-    let tam;
-    listHero.forEach(function (currentValue){
-      if(currentValue.id==id){
-        tam=currentValue;
+    this.MesService.add('vừa vào đồng chí : '+ listHero.find(hero=> hero.id==id).name);
+    return listHero.find(hero=> hero.id==id);
 
-      }
-    });
-
-    return tam;
   }
-  // getHeroByID(id:Number): Hero{
-  //   return listHero.find(hero=> hero.id==id);
-  // }
+
 }
 

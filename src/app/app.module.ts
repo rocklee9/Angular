@@ -7,6 +7,7 @@ import { HeroesComponent } from './app/heroes/heroes.component';
 import { VillainComponent } from './app/villain/villain.component';
 import { ListHeroComponent } from './app/list-hero/list-hero.component';
 import { ListVillainComponent } from './app/list-villain/list-villain.component';
+import { MessengeComponent } from './app/messenge/messenge.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListVillainComponent } from './app/list-villain/list-villain.component'
     HeroesComponent,
     VillainComponent,
     ListHeroComponent,
-    ListVillainComponent
+    ListVillainComponent,
+    MessengeComponent
   ],
   imports: [
     BrowserModule,
