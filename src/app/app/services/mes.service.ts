@@ -1,20 +1,23 @@
 import { Injectable } from '@angular/core';
 import {Observable, of} from "rxjs";
-import {mes} from "../data/mes";
+// import {mes} from "../data/mes";
 
 @Injectable({
   providedIn: 'root'
 })
 export class MesService {
-  // mes: string[];
-  constructor() { }
+  list:string[]=[];
+
   getMes():Observable<string[]>{
-    return of(mes)
+    return of(this.list)
   }
   add(s: string) : void{
-    mes.push(s);
+    this.list.push(s);
   }
-  clear():void{
-    // this.mes=[];
+  // xoa() : void {
+  //
+  // }
+  clear(): void {
+    this.list=[];
   }
 }

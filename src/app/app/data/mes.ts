@@ -1,3 +1,3 @@
-import {Hero} from "../entity/Hero";
-
-export const mes : string[]=[];
+// import {Hero} from "../entity/Hero";
+//
+// export const mes : string[]=[];

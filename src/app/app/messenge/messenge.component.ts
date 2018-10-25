@@ -21,7 +21,7 @@ export class MessengeComponent implements OnInit {
       }
     );
   }
-  clear1():void{
+  clear1():void {
     this.MesService.clear();
   }
 

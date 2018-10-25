@@ -13,7 +13,7 @@ export class HeroService {
 
   constructor(private  MesService: MesService) { }
   getHero():Observable<Hero[]> {
-    this.MesService.add('khơi tạo thành công');
+     this.MesService.add('khơi tạo thành công');
     return of(listHero); }
 
   getHeroByID(id:Number): Hero{
