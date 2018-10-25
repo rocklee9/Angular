@@ -6,6 +6,7 @@ import {mes} from "../data/mes";
   providedIn: 'root'
 })
 export class MesService {
+  // mes: string[];
   constructor() { }
   getMes():Observable<string[]>{
     return of(mes)
@@ -14,9 +15,6 @@ export class MesService {
     mes.push(s);
   }
   clear():void{
-    var tam=mes.length;
-    for(var i=0;i<tam;i++){
-      mes.pop();
-    }
+    // this.mes=[];
   }
 }

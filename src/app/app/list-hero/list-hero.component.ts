@@ -13,8 +13,6 @@ export class ListHeroComponent implements OnInit {
   listHero:Hero[];
   selectedHero:Hero;
   constructor( private heroService: HeroService ) {
-
-
   }
   ngOnInit() {
     this.heroService.getHero().subscribe(
@@ -25,11 +23,8 @@ export class ListHeroComponent implements OnInit {
         console.log('error !');
       }
     );
-
-
   }
   onSelect(hero : Hero):void{
      this.selectedHero = this.heroService.getHeroByID(hero.id);
-
   }
 }
