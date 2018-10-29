@@ -11,7 +11,6 @@ import {MesService} from "../services/mes.service";
 })
 export class ListHeroComponent implements OnInit {
   listHero:Hero[];
-  selectedHero:Hero;
   constructor( private heroService: HeroService ) {
   }
   ngOnInit() {
@@ -24,7 +23,5 @@ export class ListHeroComponent implements OnInit {
       }
     );
   }
-  onSelect(hero : Hero):void{
-     this.selectedHero = this.heroService.getHeroByID(hero.id);
-  }
+
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {listVillain} from "../data/villains";
 import {Villain} from "../entity/Villain";
+import {VillainService} from "../services/villain.service";
 
 @Component({
   selector: 'app-list-villain',
@@ -8,16 +9,19 @@ import {Villain} from "../entity/Villain";
   styleUrls: ['./list-villain.component.css']
 })
 export class ListVillainComponent implements OnInit {
-  listVillain:Villain[]
-  selectVillain:Villain
-  constructor() {
-    this.listVillain=listVillain;
+  listVillain:Villain[];
+  constructor(private villainService: VillainService) {
+
   }
 
   ngOnInit() {
-  }
-
-  onSelectVillain(villain: Villain):void {
-    this.selectVillain=villain
+    this.villainService.getVillain().subscribe(
+      x=>{
+        this.listVillain=x;
+      },
+      error=>{
+        console.log('Error!!');
+      }
+    )
   }
 }

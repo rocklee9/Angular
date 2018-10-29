@@ -1,11 +1,7 @@
-<div style="width:70%;float:right" >
-  <div class="boder-hero">
-    <app-heroes  [hero]="selectedHero"></app-heroes>
-  </div>
 
-</div>
-<div style="width:30%;float:left">
-  <div class="hero" *ngFor="let hero of listHero" (click)="onSelect(hero)">
+<div style="width:40%;float:left">
+  <h1>Danh sách Hero</h1>
+  <div  class="hero" *ngFor="let hero of listHero" routerLink="/heroes/{{hero.id}}">
 
     <div class="one-hero" [class.selected]="hero===selectedHero" >
       <b>   {{hero.id}} :  {{hero.name}}  </b>

@@ -9,6 +9,8 @@ import { ListHeroComponent } from './app/list-hero/list-hero.component';
 import { ListVillainComponent } from './app/list-villain/list-villain.component';
 import { MessengeComponent } from './app/messenge/messenge.component';
 import { AppRoutingModule } from './app-routing.module';
+import {HomeComponent} from "./app/home/home.component";
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     VillainComponent,
     ListHeroComponent,
     ListVillainComponent,
-    MessengeComponent
+    MessengeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

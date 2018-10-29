@@ -1,13 +1,10 @@
 <div style="width:70%;float:left" >
-  <div class="boder-villain">
-    <app-villain [villain]="selectVillain"></app-villain>
-  </div>
 
 </div>
 <div style="width:30%;float:right" >
-  <div class="villain" *ngFor="let villain of listVillain" (click)="onSelectVillain(villain)">
+  <div class="villain" *ngFor="let villain of listVillain" routerLink="/villain/{{villain.id}}">
 
-    <div class="one-villain" [class.selected]="villain===selectVillain">
+    <div class="one-villain">
       <b>   {{villain.id}} :  {{villain.name}}  </b>
     </div>
   </div>
